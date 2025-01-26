@@ -1,0 +1,254 @@
+
+
+
+/* General Page Styling */
+.meet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1a2a6c, #b4b8e1);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.meet-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Form Styling */
+.meet-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-input {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    width: 100%; /* Matches button width */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #02912e;
+    box-shadow: 0 0 5px #02912e;
+}
+
+/* Button Styling */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-create {
+    background-color: #045d1f;
+    color: #fff;
+}
+
+.btn-create:hover {
+    background-color: #02912e;
+    transform: translateY(-2px);
+}
+
+.btn-join {
+    background-color: #c07777;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.btn-join:hover {
+    background-color: #d08989;
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Error Message Styling */
+.error-message {
+    margin-top: 15px;
+    color: #f8d7da;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid #f5c2c7;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meet-title {
+        font-size: 2rem;
+    }
+
+    .meet-form {
+        padding: 20px 25px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+/*join meet */
+
+
+
+
+
+/* General Page Styling */
+.join-meet-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cdbcbc 0%, #1044ab 100%);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.join-meet-page h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.join-meet-page p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* Form Styling */
+.join-meet-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.join-meet-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-meet-form .form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
+.join-meet-form .form-group input {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.join-meet-form .form-group input:focus {
+    outline: none;
+    border-color: #00f2fe;
+    box-shadow: 0 0 5px #00f2fe;
+}
+
+/* Button Styling */
+.join-meet-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00c6ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-meet-form button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.join-meet-form button:hover:not(:disabled) {
+    background-color: #0093e9;
+    transform: translateY(-2px);
+}
+
+.join-meet-form button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .join-meet-page h2 {
+        font-size: 2rem;
+    }
+
+    .join-meet-page p {
+        font-size: 1rem;
+    }
+
+    .join-meet-form {
+        padding: 15px 20px;
+    }
+
+    .join-meet-form button {
+        font-size: 0.9rem;
+    }
+}

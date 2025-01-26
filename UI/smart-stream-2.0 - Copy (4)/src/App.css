@@ -1,0 +1,117 @@
+body {
+  background: #eceff1!important;
+  background-image: url(https://tse1.mm.bing.net/th?id=OIP.SQMDCDSzTIhIC7DJ8OqQuQHaE8&pid=Api&P=0&h=180);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 800px;
+  font-family:  "Arial" !important;
+  
+   background-color: rgba(0, 0, 0, 5); 
+ }
+.moving-circle {
+  animation: moveHorizontally 10s linear infinite;
+}
+
+@keyframes moveHorizontally {
+  0% {
+    transform: translateX(-100%); /* Start from the left */
+  }
+  100% {
+    transform: translateX(100%); /* Move to the right */
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.classroom-container {
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.create-classroom-form, .join-classroom-form {
+  margin-top: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+.classroom-details {
+  padding: 20px;
+}
+
+.classroom-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.upload-notes {
+  margin-top: 20px;
+}
+
+.calendar-section {
+  margin-top: 30px;
+}
+
+.notes-list {
+  margin-top: 20px;
+}
+
+.chat-section {
+  margin-top: 20px;
+}

@@ -1,0 +1,145 @@
+/* Room Page Styling */
+.room-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #242736; /* Set background to black for the entire page */
+    position: relative;
+}
+
+.room-title {
+    font-size: 1.5rem;
+    color: #fff; /* White color for meeting code text */
+    position: absolute;
+    top: 20px;
+    left: 40%; /* Place the meeting code in the top-left corner */
+    z-index: 2; /* Ensure it's above the meeting content */
+    font-weight: 700;
+    text-align: center;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    text-align: center;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    background-color: #fff;
+    color: #ff4d4d;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn-retry {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-retry:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Full-Screen Meeting Container */
+/* .meeting-container { */
+    /* width: 100%; */
+    /* height: 100vh; Full-screen size for the meeting container */
+    /* background-color: #000; Set background to black */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.meeting-container {
+    width: 100%;
+    height: calc(100vh - 50px); /* Adjust height to leave space for other elements */
+    background-color: #242736; /* Set background to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px; /* Push the container down by 50px */
+    left: 0;
+}
+
+/* Make sure the video content fills the container */
+.meeting-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Full-Screen Mode Adjustment */
+@media (max-width: 768px) {
+    .room-page {
+        padding: 1rem;
+    }
+
+    .meeting-container {
+        height: 100vh;
+        top: 60px;
+    }
+
+    .error-message {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-title {
+        font-size: 1.5rem;
+    }
+
+    .meeting-container {
+        height: 100vh;
+    }
+
+    .btn-retry {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

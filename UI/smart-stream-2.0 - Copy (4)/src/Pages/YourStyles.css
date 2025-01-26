@@ -1,0 +1,465 @@
+.online-badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .user-thumbnails {
+    margin-top: 2rem;
+  }
+  
+  .user-thumbnail {
+    text-align: center;
+  }
+  
+  .user-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .username {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .see-live-btn {
+    padding: 0.75rem 2rem;
+  }
+  .footer-logo-and-link {
+    display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 30px; /* Apply equal padding on both sides */
+  background-color: #e9ecef; /* Optional background color */
+  width: 100%; /* Ensure it covers the full width of the footer */
+  box-sizing: border-box; /* IncluAdd padding around the Focus Room section */
+
+  }
+  .footer-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .footer-logo-and-link a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+    text-decoration: none;
+  }
+  
+  .footer-logo-and-link a:hover {
+    color: #007bff;
+  }
+  .moving-circle {
+    animation: moveHorizontally 10s linear infinite;
+  }
+  
+  @keyframes moveHorizontally {
+    0% {
+      transform: translateX(-100%); /* Start from the left */
+    }
+    100% {
+      transform: translateX(100%); /* Move to the right */
+    }
+  }
+  /* Add to YourStyles.css */
+
+/* For Get More Done -> Stay Focused arrow */
+.arrow-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.arrow-down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #000;
+  transform: translateX(-50%);
+}
+
+/* For Study with Others -> Profile Circle arrow */
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #000;
+  transform: translateY(-50%);
+}
+/* classroom /
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.classroom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.classroom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.classroom-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Search Panel */
+.search-panel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-panel input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-panel button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Classroom Cards */
+.classroom-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.classroom-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.classroom-card .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.classroom-card .card-body {
+  padding: 20px;
+}
+
+.classroom-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.classroom-card .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.classroom-card button {
+  margin-top: 10px;
+}
+
+/* Modal */
+.modal-header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Alerts */
+.alert {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  margin-left: 10px;
+}
+
+.no-classrooms {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .classroom-card {
+    width: 100%;
+  }
+
+  .search-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  font-style: italic;
+}
+.classroom-container {
+  padding: 30px;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input {
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.text-danger {
+  font-size: 0.875rem;
+}
+
+.no-classrooms {
+  font-size: 1.2rem;
+  color: #6c757d;
+  text-align: center;
+}
+/* 
+chat */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+}
+
+.chat-page {
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Classroom Details on the Left Side */
+.classroom-details {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.classroom-details h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.classroom-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.classroom-details strong {
+  color: #333;
+}
+
+/* Chat Container in the Center */
+.chat-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages Styles */
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.messages p {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.messages p:nth-child(odd) {
+  background-color: #e4f2ff; /* Light blue for alternating messages */
+}
+
+.messages p:nth-child(even) {
+  background-color: #f1f1f1; /* Light grey for alternating messages */
+}
+
+/* Input Field and Send Button Styles */
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.chat-input button:hover {
+  background-color: #45a049;
+}
+
+/* Small responsive design */
+@media (max-width: 768px) {
+  .chat-page {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .classroom-details {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .chat-container {
+    margin-top: 20px;
+  }
+
+  .chat-box {
+    padding: 15px;
+  }
+
+  .messages {
+    height: 250px;
+  }
+
+  .chat-input input {
+    padding: 8px;
+  }
+
+  .chat-input button {
+    padding: 8px 15px;
+  }
+}
+
+/* Reduce the spacing between "This is About" and the navbar */
+.about-section {
+  margin-top: -20px; /* Adjust as necessary */
+}
+
+/* Center the Quote of the Day */
+.quote-section {
+  height: 100vh; /* Ensure it takes up the full viewport height */
+  text-align: center; /* Center text inside */
+  padding-top: 20px; /* Adjust padding as needed */
+}
+
+blockquote p {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.footer-icons a {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #f39c12;
+}
+
+

@@ -1,0 +1,345 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .online-badge {
+    background-color: #28a745;
+    font-size: 1.2em;
+    padding: 0.6em 1em;
+  }
+  
+  /* Main Heading Section */
+  .main-heading h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .main-heading p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .see-live-btn {
+    font-size: 1em;
+    padding: 0.8em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Chat / DM Section */
+  .chat-section {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .chat-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .chat-box h5 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1em;
+  }
+  
+  .chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    background-color: #e9f5ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .message p strong {
+    color: #333;
+  }
+  
+  .message p span {
+    color: #666;
+  }
+  
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 70px 0;
+    margin-top: 50px;
+    max-width: 80%; /* Set to 3/4 of the page width */
+    border-radius: 50px 50px 0 0; /* More pronounced rounded corners */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow */
+    position: relative;
+    bottom: 0;
+  }
+  .see-live-btn {
+    margin-bottom: 40px; /* Additional space below the button */
+  }
+  
+  .video-container {
+    margin-bottom: 30px; 
+    border-radius: 8px; /* Additional space below the video */
+  }
+  .transparent-card {
+    background-color: rgba(255, 255, 255, 0.1); /* White with 30% opacity */
+    border: none;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+  }
+  
+  /* Circle Container */
+.circle-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px; /* Space between the dots */
+  }
+  
+  /* Style for each circle (dot) */
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  
+  /* Yellow Circle */
+  .circle.yellow {
+    background-color: yellow;
+  }
+  
+  /* Green Circle */
+  .circle.green {
+    background-color: green;
+  }
+  
+  /* White Circle */
+  .circle.white {
+    background-color: white;
+    border: 2px solid #ccc; /* Optional: add border for a little definition */
+  }
+  
+  .footer-text {
+    margin-top: 40px;
+  }
+  
+  
+  /* Inner Content Styling */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 60px;
+  }
+  
+  .footer-text {
+    color: #bbb;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 500px;
+  }
+  
+  /* Download Buttons */
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .download-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+  }
+  
+  .download-button.google-play {
+    background-color: #4285f4;
+  }
+  
+  .download-button.app-store {
+    background-color: #333;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    color: #fff;
+    font-size: 0.9em;
+    margin: 10px 0;
+    padding: 0 15px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer-links a:hover {
+    color: #bbb;
+    text-decoration: underline;
+  }
+  
+  /* Legal Links */
+  .footer-legal {
+    color: #fff;
+    font-size: 0.8em;
+    margin-top: 20px;
+    padding-top:  10px;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      max-width: 90%; /* Allow footer to adjust on mobile */
+    }
+  
+    .footer-content {
+      padding: 0 10px;
+    }
+  
+    .footer-text {
+        color: black;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+  
+    .download-buttons {
+      flex-direction: column;
+    }
+  
+    .footer-links,
+    .footer-legal {
+      font-size: 0.8em;
+    }
+    .video-container {
+  margin-bottom: 60px; /* Adjust as needed for more space */
+}
+.footer-text {
+  margin-top: 60px;
+}
+
+  }
+  
+  /* HomePage.css */
+
+.main-heading-text {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.online-badge {
+  font-size: 1.2rem;
+  padding: 8px 15px;
+}
+
+.video-overlay-container {
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.play-btn {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.transparent-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.footer-logo-and-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 30px;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Countdown Timer */
+.countdown-timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Testimonial Carousel */
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item {
+  padding: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #555;
+}
+
+.carousel-item footer {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.footer-logo {
+  width: 40px;
+}
+
+/* Other general styles */

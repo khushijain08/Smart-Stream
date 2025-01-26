@@ -1,0 +1,228 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FocusRoomPage.css */
+
+/* Centering and increasing the size of text for the section */
+.section-title-large {
+  font-size: 3rem; /* Increase font size */
+  font-weight: bold;
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some margin below */
+}
+
+.section-subtitle-large {
+  font-size: 2rem; /* Make subtitle bigger */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some margin below */
+}
+
+.section-description-large {
+  font-size: 1.25rem; /* Larger font size */
+  text-align: center; /* Center the text */
+  margin-bottom: 40px; /* Add some space below */
+}
+
+
+
+
+.highlight {
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+/* Join a Focus Room Section */
+.join-focus-room {
+  padding: 5rem 5rem;
+  background: #f8f9fa;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text horizontally */
+  height: 100vh; /* Full viewport height */
+
+
+}
+
+.room-card {
+  border-radius: 30px; /* Smooth rounded corners */
+  border: 4px solid #007bff; /* Thicker border with a primary color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Optional: Add shadow for depth */
+  overflow: hidden; /* Ensures content stays inside rounded area */
+  transition: transform 0.2s ease, border-color 0.2s ease; /* Smooth hover effect */
+  margin-bottom: 20px; /* Add bottom margin to create space between cards */
+
+}
+
+.room-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  border-color: #0056b3; /* Change border color on hover for a dynamic effect */
+}
+
+.join-button {
+  border-radius: 20px; /* Rounded button to match card design */
+  padding: 15px 15px;
+}
+
+ 
+.room-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #343a40;
+  position: absolute;
+} 
+
+
+
+
+.room-status {
+  font-size: 0.9rem;
+  color: #28a745;
+  margin-bottom: 0.5rem;
+}
+
+.room-locked {
+  font-size: 0.85rem;
+  color: red;
+}
+
+.join-button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+}
+
+.feedback-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.feedback-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #6c757d; /* Secondary button color */
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+  background-color: #5a6268; /* Darker shade for hover */
+}
+
+
+/* Why Join a Focus Room Section */
+.why-focus-room {
+  padding: 40px 0; /* Add some padding to the section */
+  background: #ffffff;
+  text-align: center; /* Center all content in the Why Join a Focus Room section */
+
+}
+.why-focus-room .section-description {
+  text-align: center;  /* Center the text horizontally */
+  padding: 20px; /* Optional: Add some padding around the text */
+}
+.why-focus-room .container {
+  max-width: 800px; /* Limit the width of the text for better readability */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styling for FAQ cards */
+.faq-card {
+  margin-bottom: 20px;  /* Add space between the cards */
+  padding: 20px;
+  border-radius: 10px;  /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
+  background-color: #f8f9fa;  /* Light background color */
+  transition: all 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);  /* Lift the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+.faq-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;  /* Dark text color */
+  text-align: center;  /* Center align the text inside the card */
+}
+
+/* Adjust card responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .faq-card {
+    margin-bottom: 15px;
+  }
+}
+
+/* Continuous horizontal animation for testimonial cards */
+/* Continuous horizontal animation for testimonial cards */
+/* Continuous horizontal animation for testimonial cards */
+@keyframes moveCards {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card-animation-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-animation {
+  animation: moveCards 15s linear infinite;
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  background-color: #f8f9fa;
+  border-radius: 15px; /* Curved corners */
+  width: 300px; /* Adjust width according to your card size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for a more elevated look */
+}
+
+.card-animation p {
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.faq-button {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  color: #343a40;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.faq-button:hover {
+  background-color: #e9ecef;
+}
+
+.back-to-top {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  background: #6c63ff;
+  color: white;
+}

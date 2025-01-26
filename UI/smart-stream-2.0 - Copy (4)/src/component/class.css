@@ -1,0 +1,121 @@
+.classroom-details-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .classroom-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subject, .section, .description, .teacher {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .upload-button {
+    margin-top: 20px;
+  }
+  
+  .content-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .calendar-container {
+    flex: 1;
+    max-width: 350px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ensures it starts from the top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .notes-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Makes sure the notes start from the top */
+    padding: 15px;
+  }
+  
+  .notes-list {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .note-item {
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .download-button {
+    text-decoration: none;
+  }
+  
+  .modal-header {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .chat-icon-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .chat-icon {
+    color: #007bff;
+  }
+
+  
+  .sticky-note {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f9f9c5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .sticky-note h4 {
+    margin-top: 0;
+  }
+  
+  .sticky-note textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .sticky-note button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sticky-note button:hover {
+    background-color: #45a049;
+  }
+  
